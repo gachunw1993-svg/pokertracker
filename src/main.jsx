@@ -175,8 +175,8 @@ function RecordForm({ onSave }) {
           <Input label="End Time" type="time" value={form.endTime} onChange={(e) => update("endTime", e.target.value)} />
           <Input label="Buy-in" type="number" inputMode="decimal" placeholder="25" value={form.buyIn} onChange={(e) => update("buyIn", e.target.value)} />
           <Input label="No. of Bullets" type="number" inputMode="numeric" min="1" value={form.bullets} onChange={(e) => update("bullets", e.target.value)} />
-          <Input label="Cash-out Amount" type="number" inputMode="decimal" placeholder="0" value={form.cashOut} onChange={(e) => update("cashOut", e.target.value)} />
-          <label className="field"><span>Auto Profit/Loss</span><input readOnly value={money(pl)} className={pl >= 0 ? "profitInput" : "lossInput"} /></label>
+          <Input label="Cash-out" type="number" inputMode="decimal" placeholder="0" value={form.cashOut} onChange={(e) => update("cashOut", e.target.value)} />
+          <label className="field"><span>Profit/Loss</span><input readOnly value={money(pl)} className={pl >= 0 ? "profitInput" : "lossInput"} /></label>
           <TextArea label="Notes" rows="4" placeholder="Key hand, mental state, discipline note, table condition..." value={form.notes} onChange={(e) => update("notes", e.target.value)} />
         </div>
 
